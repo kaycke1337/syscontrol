@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.controls {
+    margin-bottom: var(--spacing-4);
+}
+
+.search {
+    position: relative;
+    max-width: 400px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: var(--spacing-3);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+}
+
+.searchInput {
+    width: 100%;
+    padding: var(--spacing-2) var(--spacing-3) var(--spacing-2) var(--spacing-8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    outline: none;
+}
+
+.searchInput:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.tableContainer {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: var(--spacing-4);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+    background-color: var(--color-background);
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.actions {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.actionButton {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    padding: var(--spacing-1);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s;
+}
+
+.actionButton:hover {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+.actionButton.delete:hover {
+    color: var(--color-danger);
+}
+
+.empty {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: var(--spacing-8);
+}

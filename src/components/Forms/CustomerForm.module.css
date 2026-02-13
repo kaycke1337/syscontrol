@@ -1,0 +1,67 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.formGroup label {
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: var(--spacing-2) var(--spacing-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-3);
+    margin-top: var(--spacing-4);
+}
+
+.submitButton,
+.cancelButton {
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    border: none;
+}
+
+.submitButton {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.submitButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.cancelButton {
+    background-color: transparent;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+}
+
+.cancelButton:hover {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
